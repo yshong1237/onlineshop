@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'onlineshop',
-        'USER': 'admin',
-        'PASSWORD': 'admin12345',
-        'HOST':'onlineshop99.c1iliri4w9kh.ap-northeast-2.rds.amazonaws.com',
+        'NAME': 'db-name',
+        'USER': 'db-user-name',
+        'PASSWORD': 'db-user-password',
+        'HOST':'db-hostname',
         'PORT':'3306',
     }
 }
@@ -130,10 +130,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-AWS_ACCESS_KEY_ID = 'AKIAIB54RULUL6QCWDXQ'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = 'AWS-key'
+AWS_SECRET_ACCESS_KEY = 'AWS-secret-key'
 AWS_REGION = 'ap-northeast-2'
-AWS_STORAGE_BUCKET_NAME = 'onlineshopysh'
+AWS_STORAGE_BUCKET_NAME = 'AWS-bucket-name'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.%s.amazonaws.com' % (AWS_STORAGE_BUCKET_NAME,AWS_REGION)
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
@@ -160,5 +160,5 @@ LOGIN_REDIRECT_URL = '/'
 # CART_ID = 'cart_in_session'
 CART_ID = 'session_cart_id'
 
-IAMPORT_KEY = '5008391898455546'
-IAMPORT_SECRET = '95vHad9LhbEEaQt4GXEbw5QGFLuQnGSxLneWBnITzmxJd1OUYt5vyWbdHG35mVD8jR5UfNNPalynmnhl'
+IAMPORT_KEY = 'iamport-key'
+IAMPORT_SECRET = 'iamport-secret-key'
